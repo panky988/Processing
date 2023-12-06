@@ -116,7 +116,7 @@ void draw() {
 
 void keyPressed() {
   if (!gameLost) {
-    // Ellenőrizzük, hogy a játékos az ajtón belülre kattintott-e
+    // Ellenőrizzük, hogy a játékos az ablakon belülre kattintott-e
     if (playerX > (width - 550) / 2 && playerX < (width + 550) / 2 &&
         playerY > (height - 550) / 2 && playerY < (height + 550) / 2 && !gameWon) {
       // Ha igen, akkor lekezeljük a billentyű lenyomást és mozgatjuk a játékost
@@ -180,7 +180,7 @@ void keyPressed() {
 }
 
 void mousePressed() {
-  // Ellenőrizzük, hogy a játékos az ajtón belülre kattintott-e
+  // Ellenőrizzük, hogy a játékos az ablakon belülre kattintott-e
   if (playerX > (width - 550) / 2 && playerX < (width + 550) / 2 &&
       playerY > (height - 550) / 2 && playerY < (height + 550) / 2 && (gameWon || gameLost)) {
     // Ha igen, akkor újrakezdjük a játékot
